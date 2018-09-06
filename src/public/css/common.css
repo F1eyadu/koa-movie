@@ -1,0 +1,11 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+/* 文字位置 */
+
+.tr{
+    text-align: right;
+}

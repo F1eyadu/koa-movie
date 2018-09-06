@@ -1,0 +1,84 @@
+.nav_title{
+    font-size: 36px;
+    color: #1C88CB;
+    text-align: right;
+}
+.nav_search_wrapper{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 35px;
+    margin-top: 7.5px;
+    box-shadow:  0 1px 1px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.nav_inpput{
+    flex: 1;
+    border: none;
+    font-size: 14px;
+    height: 100%;
+    padding: 5px;
+    color: #333;
+    outline: none;
+}
+.nav_search{
+    height: 35px;
+    width: 35px;
+    background: #1C88CB;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+/* 首页 */
+
+.index_main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.index_cate_wrapper{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.index_cate_wrapper .index_cate_title{
+    font-size: 16px;
+    color: #333;
+}
+
+.index_cate_wrapper .index_cate_name{
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+.index_cate_wrapper .index_cate_more{
+    font-size: 12px;
+    color: #666699;
+}
+
+.index_mian_content{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.index_movie_wrapper{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.index_movie_wrapper .index_movie_name{
+    font-size: 14px;
+    color: #1C88CB;
+    margin-top: 5px;
+}
+
+.index_movie_wrapper .index_movie_scroe{
+    font-size: 14px;
+    color: #e09015;
+}

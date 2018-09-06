@@ -3,7 +3,7 @@ let router = new Router()
 
 
 router.get('/', async(ctx, next) => {
-    ctx.body = '首页'
+    ctx.render('index')
 })
 
 module.exports = router
