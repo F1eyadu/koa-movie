@@ -1,7 +1,9 @@
+
 .nav_title{
-    font-size: 36px;
+    font-size: .48rem;
     color: #1C88CB;
     text-align: right;
+    padding-top: .133rem;
 }
 .nav_search_wrapper{
     display: flex;
@@ -81,4 +83,19 @@
 .index_movie_wrapper .index_movie_scroe{
     font-size: 14px;
     color: #e09015;
+}
+
+.model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#dplayer{
+    width: 400px;
+    height: 250px;
+    margin: 200px auto;
 }

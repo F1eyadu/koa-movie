@@ -16,25 +16,26 @@ class Db {
         this.dbClient = ''
         this.connect()
     }
-    connect() {//连接数据库
-        return new Promise((resolve, reject) => {
-            if(!this.dbClient){
-                MongoClient.connect(Config.dbUrl, (err, client) => {
+    connect(){  /*连接数据库*/
+        return new Promise((resolve,reject)=>{
+            if(!this.dbClient){         /*1、解决数据库多次连接的问题*/
+                MongoClient.connect(Config.dbUrl,{ useNewUrlParser: true },(err,client)=>{
                     if(err){
                         reject(err)
                     }else{
-                        this.dbClient = client.db(Config.dbName)
-                        resolve(dbClient)
+  
+                        this.dbClient=client.db(Config.dbName);
+                        resolve(this.dbClient)
                     }
                 })
             }else{
-                resolve(this.dbClient)
+                resolve(this.dbClient);
             }
         })
-    }
+      }
     find(collectionName, doc) {//查找
         return new Promise((resolve, reject) => {
-            this.connect().then((bd) => {
+            this.connect().then((db) => {
                 let result = db.collection(collectionName).find(doc)
                 result.toArray((err, docs) => {
                     if(err) {
@@ -90,4 +91,4 @@ class Db {
     }
 }
 
-module.exports = Db.instance
+module.exports = Db.getInstance()

@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "art-template": "^4.13.0",
+    "dplayer": "^1.24.0",
     "koa": "^2.5.2",
     "koa-art-template": "^1.1.1",
     "koa-bodyparser": "^2.5.0",
